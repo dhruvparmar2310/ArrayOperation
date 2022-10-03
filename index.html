@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Task</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+</head>
+<body onload="checkArraySize()">
+    <table>
+        <tr>
+            <td colspan="3">
+                <input type="number" id="myInput" />
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td><button class="btnAdd" onclick="addElement()">Add</button></td>
+            <td></td>
+            <td><button class="btnDelete" onclick="deleteElement()">Delete</button></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td><button class="operation" id="pairOperation" onclick="getPairs()" disabled>Pairs</button></td>
+            <td><button class="operation" id="greaterThanOperation" onclick="getGreaterThan10()" disabled>&gt 10</button></td>
+            <td><button class="operation" id="SequenceOperation" onclick="getSequence()" disabled>Sequecnce</button></td>
+        </tr>
+    </table>
+    
+    <p id="output"></p>
+    <p id="pairs"></p>
+    <p id="greater"></p>
+    <p id="sequence"></p>
+    <p id="total"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
